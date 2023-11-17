@@ -34,10 +34,10 @@ const NoResult = styled.p`
 
 
 
-const EmployeeCard = ({user}) => {
+const EmployeeCard = ({user, searchQuery}) => {
     return (
         <>
-            {user ? (<EmployeeInfo>   
+            {user && searchQuery ? (<EmployeeInfo>   
             <Img width="424" height="286" src={noPhoto} alt="" />
             <div>
                 <Title className='fz-n fw-m'>{user?.name}</Title>

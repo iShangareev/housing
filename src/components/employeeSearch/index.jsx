@@ -108,7 +108,8 @@ const EmployeeSearch = () => {
                     {noResult && <p>ничего не найдено</p>}
                     <SearchResult results={searchResults} onSelectUser={setSelectedUser} />
                 </Sidebar>
-                <EmployeeCard user={selectedUser}/>
+                <EmployeeCard user={selectedUser} searchQuery={searchQuery} />
+
             </Container>
         </Main>
     );

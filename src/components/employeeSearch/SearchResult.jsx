@@ -23,7 +23,8 @@ const SearchResult = ({ results, onSelectUser }) => {
         <Container>
             {results.map((user) => (
                 <EmpolyeeSearchPreview 
-                    key={user.id} onSelectUser={onSelectUser}
+                    key={user.id}
+                    onSelectUser={onSelectUser}
                     user={user}/>
             ))}
         </Container>
